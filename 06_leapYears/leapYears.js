@@ -6,6 +6,7 @@ const leapYears = function(year) {
     }
     return true;
   }
+  return false;
 };
 
 module.exports = leapYears;
