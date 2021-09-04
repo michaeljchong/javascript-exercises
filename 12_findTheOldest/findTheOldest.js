@@ -10,10 +10,9 @@ const findTheOldest = function(people) {
 
 // Using reduce array method
 /* const findTheOldest = function(people) {
-  const oldest = people.reduce((currentOldest, person) => {
+  return people.reduce((currentOldest, person) => {
     return (numYearsLived(currentOldest) > numYearsLived(person)) ? currentOldest : person;
   });
-  return oldest;
 }; */
 
 module.exports = findTheOldest;
