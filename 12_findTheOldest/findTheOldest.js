@@ -8,4 +8,12 @@ const findTheOldest = function(people) {
   return people[0];
 };
 
+// Using reduce array method
+/* const findTheOldest = function(people) {
+  const oldest = people.reduce((currentOldest, person) => {
+    return (numYearsLived(currentOldest) > numYearsLived(person)) ? currentOldest : person;
+  });
+  return oldest;
+}; */
+
 module.exports = findTheOldest;
