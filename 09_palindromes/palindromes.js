@@ -6,11 +6,9 @@ const palindromes = function (phrase) {
                     .map(char => char.toLowerCase());
   
   let firstHalf = lowerAlpha.slice(0, lowerAlpha.length / 2);
-  let secondHalf = lowerAlpha.slice(lowerAlpha.length / 2);
-  if (lowerAlpha.length % 2 === 1) {
-    firstHalf = lowerAlpha.slice(0, lowerAlpha.length / 2);
-    secondHalf = lowerAlpha.slice(lowerAlpha.length / 2 + 1);
-  }
+  let secondHalf = (lowerAlpha.length % 2 === 0) ?
+                    lowerAlpha.slice(lowerAlpha.length / 2) :
+                    lowerAlpha.slice(lowerAlpha.length / 2 + 1);
   
   return firstHalf.join('') === secondHalf.reverse().join('');
 };
